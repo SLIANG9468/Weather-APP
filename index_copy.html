@@ -21,9 +21,7 @@
         }
 
         h2 {
-            margin-top: 60px;
-            display: flex;
-            justify-content: center;
+            margin-top: 60px; 
         }
 
         form {
@@ -66,6 +64,7 @@
             border: 1px solid #ddd;
             border-radius: 5px;
             overflow: hidden;
+            text-align: left;
             box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
         }
 
@@ -73,20 +72,11 @@
             padding: 8px;
             font-weight: bold;
             color: white;
-            display: flex;
-            justify-content: center;
-            height: 20px;
-            align-items: center;
-            margin-top: 10px;
         }
 
         .card-body {
             padding: 12px;
             font-size: 18px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin:  8px;
         }
 
         .high    { background-color: #d23a3a; }
@@ -101,8 +91,27 @@
             <input id="searchBar" type="text" placeholder="City Name">
             <button id="searchBtn" type="submit">Search</button>
         </form>
+        <h2>Chicago, US</h2>
         <div class="card-container">
+            <div class="card">
+                <div class="card-header high">High</div>
+                <div class="card-body">74℉</div>
+            </div>
 
+            <div class="card">
+                <div class="card-header low">Low</div>
+                <div class="card-body">69℉</div>
+            </div>
+
+            <div class="card">
+                <div class="card-header forecast">Forecast</div>
+                <div class="card-body">Clouds</div>
+            </div>
+
+            <div class="card">
+                <div class="card-header humidity">Humidity</div>
+                <div class="card-body">. </div>
+            </div>
         </div>
     </main>
     <script type = "module" src="config.js"></script>
